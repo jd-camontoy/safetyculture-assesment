@@ -1,0 +1,197 @@
+.article {
+    color: $text-color;
+
+    & a {
+        color: $primary-color;
+        text-decoration: none;
+    }
+
+    &__details {
+        display: flex;
+        align-items: center;
+    }
+
+    &__label {
+        font-size: 1.4rem;
+        font-weight: 800;
+        border-radius: 5rem;
+        border: 2px solid $primary-color;
+        padding: 6px 1.2rem;
+        display: inline-block;
+    }
+
+    &__last-updated {
+        font-size: 1.6rem;
+
+        &--date {
+            font-weight: 700;
+        }
+    }
+
+    &__section {
+        padding: 2rem 0;
+
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', 'Arial', sans-serif;
+            font-weight: 700;
+        }
+
+        &--title {
+            border-bottom: 1.4px solid $border-color;
+
+            h1 {
+                font-size: 4.4rem;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        &--body {
+            h2 {
+                font-size: 3.4rem;
+                margin-bottom: 1.6rem;
+            }
+
+            p, ul li {
+                font-size: 1.6rem;
+                margin-bottom: 1.6rem;
+            }
+
+            & > ul {
+                padding-left: 2rem;
+
+                li {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+
+    &__need-list {
+        border: 1px solid $border-color;
+        border-radius: 2rem;
+        padding: 2rem;
+
+        h3 {
+            font-size: 3rem;
+            margin-bottom: 1.4rem;
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__tab-component{
+        width: 100%;
+
+        &-tabs {
+            display: flex;
+            width: 100%;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                border-bottom: 3px solid $border-color-darker;
+                overflow: hidden;
+                z-index: -1;
+            }
+        }
+
+        &-tab {
+            &.active {
+                background-color: $light-grey;
+                color: $primary-color;
+                border-bottom: 3px solid $primary-color !important;
+            }
+
+            padding: 2rem;
+            font-size: 1.6rem;
+            font-weight: 700;
+            border-radius: 6px 6px 0 0;
+            border-bottom: 3px solid $alternate-text-color;
+            cursor: pointer;
+        }
+
+        &-content {
+            font-size: 1.6rem;
+            padding: 1.4rem;
+
+            ol {
+                padding-left: 2rem;
+
+                li {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+
+    &__need-help {
+        &-section {
+            margin: 4rem 0;
+            padding: 2.2rem;
+            border-radius: 2rem;
+            border: 2px solid $primary-color;
+            
+            h4 {
+                font-family: 'Poppins', 'Arial', sans-serif;
+                font-size: 2.2rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        &-actions {
+            display: flex;
+            align-items: center;
+
+            .btn:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            a {
+                border-radius: 1.6rem;
+                font-size: 1.4rem;
+                font-weight: 600;
+                padding: 1.6rem 3.6rem;
+
+                &:hover {
+                    background-color: rgba($color: $primary-color, $alpha: 0.2);
+                }
+            }
+        }
+    }
+
+    &__mini-survey {
+        border-radius: 2rem;
+        background-color: $light-grey;
+        padding: 2rem 1.6rem;
+        display: flex;
+        align-items: center;
+        margin: 4rem 0;
+
+        p {
+            font-size: 1.6rem;
+        }
+
+        a {
+            border-radius: 1.2rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding: 1rem 1.2rem;
+
+            &:hover {
+                background-color: rgba($color: $primary-color, $alpha: 0.2);
+            }
+        }
+    }
+}

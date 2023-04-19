@@ -1,0 +1,70 @@
+.footer {
+    width: 100%;
+    border-top: 2px solid $border-color-darker;
+
+    &__mobile-app-links {
+        margin: 4rem auto;
+        padding: 1.6rem 1.2rem;
+        display: flex;
+        align-items: center;
+        border-radius: 1.6rem;
+        border: 2px solid $light-grey;
+        width: fit-content;
+
+        .img {
+            &--logo {
+                width: 16rem;
+            }
+
+            &--google-badge {
+                width: 14rem;
+            }
+
+            &--apple-badge {
+                width: 12.6rem;
+            }
+        }
+
+        img:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__links {
+        background-color: $light-purple;
+        padding: 2rem 8rem;
+        display: flex;
+    }
+
+    &__nav {
+        ul li {
+            display: inline-block;
+            font-size: 1.4rem;
+            color: $text-color;
+            
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            &:not(:last-child) {
+                &::after {
+                    content: "|";
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    &__socials {
+        margin-left: auto;
+        
+        a {
+            text-decoration: none;
+
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
+        }
+    }
+}
