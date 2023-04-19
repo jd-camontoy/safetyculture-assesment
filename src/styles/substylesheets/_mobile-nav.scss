@@ -1,14 +1,10 @@
 .navigation {
     &--mobile {
-        &.show {
-            display: block;
-        }
-        display: none;
         width: 100%;
         height: 100%;
         overflow: hidden;
         background-color: $light-purple;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         z-index: 2;
@@ -61,6 +57,16 @@
 
             & i:last-child {
                 margin-left: auto;
+            }
+        }
+
+        &__user-actions {
+            display: flex;
+            padding: 16px;
+
+            .btn {
+                font-size: 16px !important;
+                width: 100%;
             }
         }
     }

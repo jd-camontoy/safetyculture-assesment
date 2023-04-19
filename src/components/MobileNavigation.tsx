@@ -1,6 +1,6 @@
 export default function MobileNavigation({ toggleModalFn }) {
   return (
-    <nav className="navigation--mobile show">
+    <nav className="navigation--mobile">
       <div className="navigation--mobile__header">
         <img src="assets/sc-logo-color.svg" alt="SafetyCulture Logo" />
         <div className="navigation--mobile__header-actions">
@@ -36,6 +36,13 @@ export default function MobileNavigation({ toggleModalFn }) {
         <i className="fa-solid fa-globe margin-right-8"></i>
         <span>English (US)</span>
         <i className="fa-solid fa-chevron-down"></i>
+      </div>
+      <div className="navigation--mobile__user-actions">
+        <button className="btn btn--primary btn--hollow margin-right-10">
+          <i className="fa-solid fa-arrow-right-to-bracket margin-right-5"></i>
+          Log in
+        </button>
+        <button className="btn btn--primary">Contact us</button>
       </div>
     </nav>
   );

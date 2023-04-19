@@ -1,7 +1,7 @@
 import Footer from './Footer'
 import Header from './Header'
 import MobileNavigation from './MobileNavigation'
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 
 export default function Layout({ children }) {
     const [ mobileNavIsOpen, setMobileNavIsOpen ] = useState(false);
@@ -17,11 +17,11 @@ export default function Layout({ children }) {
     }
 
     return (
-        <>
+        <Fragment>
             {displayMobileNav()}
             <Header toggleModalFn={toggleModal} />
                 { children }
             <Footer />
-        </>
+        </ Fragment>
     );
 }

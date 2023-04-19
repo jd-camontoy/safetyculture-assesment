@@ -1,9 +1,10 @@
 import Layout from "../components/Layout";
 import Head from "next/head";
+import { Fragment } from 'react';
 
 export default function Index() {
   return (
-    <>
+    <Fragment>
       <Head>
         <title>Assign actions to users and groups - Safety Culture</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,7 +46,7 @@ export default function Index() {
                 <p className="article__last-updated">
                   Last updated:{" "}
                   <span className="article__last-updated--date">
-                    April 00, 2023
+                    November 27, 2022
                   </span>
                 </p>
               </div>
@@ -118,6 +119,7 @@ export default function Index() {
                           groups or emails" dropdown menu. If there's already an
                           assignee, select the assignee's name and add more
                           users or groups from the dropdown menu.
+                          <img src="http://images.ctfassets.net/wum34wy9buzj/1MPlunkBeDH8rzRrrxTlEM/27c2a968dd111c1f9e10baafdd1f92d6/web-actions-assign-to-users-groups-dec.png" alt="Web app: Assign an action to assignees" />
                         </li>
                         <li>Click Done.</li>
                       </ol>
@@ -198,6 +200,6 @@ export default function Index() {
           </div>
         </main>
       </Layout>
-    </>
+    </Fragment>
   );
 }
